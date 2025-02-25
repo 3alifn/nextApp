@@ -4,7 +4,7 @@ export const metadata = {
     description: 'A Demo Todo App',
   }
 
-import "../styles/global.css";
+import "./globals.css";
 
 export default function RootLayout({ children }) {
     return (
