@@ -52,8 +52,6 @@ server/*.log
 # Optional: Ignore compiled files
 *.tsbuildinfo
 
-# Optional: Ignore uploads (if you're storing uploaded files locally)
-server/uploads/
 
 # Optional: Ignore shared folder build artifacts
 shared/dist/
