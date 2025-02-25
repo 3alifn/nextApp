@@ -1,0 +1,59 @@
+
+# Client & Server node_modules
+client/node_modules/
+server/node_modules/
+client/package-lock.json
+server/package-lock.json
+# Logs
+logs/
+*.log
+*.log.*
+
+# dotenv environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Next.js build output
+client/.next/
+client/out/
+
+# Express build output (if any)
+server/dist/
+server/build/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Test coverage
+coverage/
+
+# Tailwind CSS JIT cache
+.client/.tailwind/
+
+# Optional: Ignore Mac system files
+*.DS_Store
+
+# Optional: Ignore log files from both client and server
+client/*.log
+server/*.log
+
+# Optional: Ignore compiled files
+*.tsbuildinfo
+
+# Optional: Ignore uploads (if you're storing uploaded files locally)
+server/uploads/
+
+# Optional: Ignore shared folder build artifacts
+shared/dist/

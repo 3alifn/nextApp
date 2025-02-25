@@ -1,0 +1,27 @@
+{
+  "type": "module",
+  "name": "next",
+  "version": "1.0.0",
+  "description": "Todo app using node, react, next, express, and mysql",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "next lint"
+  },
+  "keywords": [
+    "pipra"
+  ],
+  "author": "3alifn",
+  "license": "ISC",
+  "dependencies": {
+    "daisyui": "^4.12.23",
+    "next": "^13.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "tailwindcss": "^4.0.8"
+  }
+}
