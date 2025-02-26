@@ -1,9 +1,10 @@
-{
+{ "type": "module",
   "name": "server",
   "version": "1.0.0",
   "description": "todo app using node, react, next express and mysql",
   "main": "src/app.js",
   "dependencies": {
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
