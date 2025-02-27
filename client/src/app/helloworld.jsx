@@ -1,28 +1,33 @@
-import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
+"use client";
+import axios from "axios";
+import { useState, useEffect } from "react";
 
-export default function APIHandler() {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const router = useRouter();
+const HelloWorldApi= ()=>{
+const [data, setData]= useState(null);
 
-  useEffect(() => {
-    fetch("/api/helloworld/") // ✅ Express API Request
-      .then(async (res) => {
-   
-        return res.json();
-      })
-      .then((data) => {
-        setData(data);
-        setLoading(false);
-      })
-      .catch((err) => console.error(err));
-  }, []);
+useEffect(()=>{
+  axios.get('/api/helloworld')
+  .then((res) => {
 
-  return (
-    <div className="text-center">
-      <h1 className="text-2xl font-bold">API Response</h1>
-      <p>{data}</p>
-    </div>
-  );
+    if (res.data && typeof res.data === "object") {
+      setData(JSON.stringify(res.data)); 
+    } else {
+      setData(res.data);
+    }
+  })
+  .catch((error)=>{
+    console.log(error.message);
+    return setData(error.message);
+  })
+},[])
+
+
+return (
+  <center className="mt-5 mb-3">
+    <code className="p-3 m-3 bg-green-300 text-red-500">{data?data:"Loading..."}</code>
+  </center>
+)
+
 }
+
+export default HelloWorldApi;
