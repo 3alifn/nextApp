@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
-import HelloWorldApi  from "./helloworld";
 export default function Page() {
   return (
     <>
@@ -12,11 +11,10 @@ export default function Page() {
           Demo Page
         </Link>  
         
-         <Link href="/api/helloworld/" className="btn mt-3 mx-1 px-3 p-0  btn-info">
+         <Link href="/helloworld/" className="btn mt-3 mx-1 px-3 p-0  btn-info">
           Hello World
         </Link>
 
-       <HelloWorldApi/>
       </center>
       <Footer />
     </>
