@@ -1,17 +1,17 @@
-# 📝 Todo App - Microservice Architecture
+# Todo App - Microservice Architecture
 
 A Short **Todo App** built with **Node.js**, **React**, **Next.js**, **Express**, and **MySQL** following a **Microservice Architecture**.
 
 ## 🚀 Tech Stack
 
-- ⚛ **React.js** – Frontend UI  
-- ⚡ **Next.js** – Server-side Rendering & Routing  
-- 🚀 **Express.js** – Backend API  
-- 🛢 **MySQL** – Database  
-- 🔗 **Node.js** – Runtime Environment  
-- 🏗 **Microservice Architecture** – Scalable and maintainable services
+-  **React.js** – Frontend UI  
+-  **Next.js** – Server-side Rendering & Routing  
+-  **Express.js** – Backend API  
+-  **MySQL** – Database  
+-  **Node.js** – Runtime Environment  
+-  **Microservice Architecture** – Scalable and maintainable services
 
-## 📁 Project Structure
+## Project Structure
 
 # For Client (Next.js)
 cd client
