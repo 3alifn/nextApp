@@ -1,4 +1,4 @@
-# Todo App - Microservice Architecture
+# NextJs Experimental App - Microservice Architecture
 
 A Short **Todo App** built with **Node.js**, **React**, **Next.js**, **Express**, and **MySQL** following a **Microservice Architecture**.
 
