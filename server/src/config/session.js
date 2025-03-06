@@ -1,10 +1,9 @@
-import expressSession from "express-session";
-import mysqlSession from "express-mysql-session";
+import session from "express-session";
+import MYSQLStore from "express-mysql-session";
 import pool from "./mysql.js";
-const clientToServerSession= expressSession(mysqlSession);
-const sessionStore= new clientToServerSession({}, pool)
+const sessionStore= new MYSQLStore({}, pool)
 
-const useGlobalSessionMiddleware= expressSession({
+const useGlobalSession= session({
     key: process.env.PUBLIC_KEY,
     secret: process.env.SECRET_KEY,
     store: sessionStore,
@@ -15,4 +14,4 @@ const useGlobalSessionMiddleware= expressSession({
     }
 })
 
-export default useGlobalSessionMiddleware;
+export default useGlobalSession;
