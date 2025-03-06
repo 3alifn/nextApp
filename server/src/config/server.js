@@ -8,14 +8,15 @@ import { fileURLToPath } from "node:url";
 export const __filename= fileURLToPath(import.meta.url);
 export const __dirname= path.dirname(__filename);
 
-import useGlobalCorsMiddleware from "./cors.js";
+import useGlobalCors from "./cors.js";
+import useGlobalSession from "./session.js";
 export const app= express();
 
 app.use(express.json()); // parse url data
 app.use(express.urlencoded({extended: true})); // parse url form-data
 app.use(express.static('../../../client/src/public')) // set static path for file serve
-app.use(useGlobalCorsMiddleware);
-app.use(useGlobalCorsMiddleware);
+app.use(useGlobalCors);
+app.use(useGlobalSession);
 const PORT= process.env.PORT || 5000;
 
 app.listen(PORT, ()=>{
