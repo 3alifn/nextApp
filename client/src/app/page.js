@@ -13,7 +13,10 @@ export default function Page() {
         
          <Link href="/helloworld/" className="btn mt-3 mx-1 px-3 p-0  btn-info">
           Hello World
-        </Link>
+        </Link> <br/>
+
+        <Link className="link" href="/users/1/a">Users</Link> <br/>
+        <Link className="link" href="/section">Section</Link> <br/>
 
       </center>
       <Footer />
