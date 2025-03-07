@@ -16,7 +16,7 @@ app.use(express.json()); // parse url data
 app.use(express.urlencoded({extended: true})); // parse url form-data
 app.use(express.static('../../../client/src/public')) // set static path for file serve
 app.use(useGlobalCors);
-app.use(useGlobalSession);
+// app.use(useGlobalSession);
 const PORT= process.env.PORT || 5000;
 
 app.listen(PORT, ()=>{

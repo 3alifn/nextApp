@@ -1,7 +1,8 @@
 import session from "express-session";
-import MYSQLStore from "express-mysql-session";
+import MySQLStore from "express-mysql-session";
 import pool from "./mysql.js";
-const sessionStore= new MYSQLStore({}, pool)
+const sessionToServer= MySQLStore(session);
+const sessionStore= new sessionToServer({}, pool)
 
 const useGlobalSession= session({
     key: process.env.PUBLIC_KEY,
